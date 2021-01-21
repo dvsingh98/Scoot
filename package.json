@@ -7,11 +7,17 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "npm run pods": "cd ios && pod install",
+    "simi": "npm run ios",
+    "sima": "npm run android-device",
+    "nuke-all": "npm run nuke:all",
+    "reset-cache": "npm start -- --reset-cache"
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.4"
+    "react-native": "0.63.4",
+    "react-scripts": "^2.1.8"
   },
   "devDependencies": {
     "@babel/core": "7.12.10",
@@ -21,7 +27,8 @@
     "eslint": "6.8.0",
     "jest": "25.5.4",
     "metro-react-native-babel-preset": "0.59.0",
-    "react-test-renderer": "16.13.1"
+    "react-test-renderer": "16.13.1",
+    "ws": "3.3.2"
   },
   "jest": {
     "preset": "react-native"
