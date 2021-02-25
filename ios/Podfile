@@ -1,6 +1,6 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
-
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 
 target 'scoot' do
@@ -9,6 +9,9 @@ target 'scoot' do
   use_react_native!(:path => config["reactNativePath"])
 
   pod 'react-native-maps', :path => '../node_modules/react-native-maps'
+  pod 'react-native-google-maps', :path => '../node_modules/react-native-maps'
+  pod 'GoogleMaps'
+  pod 'Google-Maps-iOS-Utils'
 
   target 'scootTests' do
     inherit! :complete
