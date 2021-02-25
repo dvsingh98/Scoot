@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "npm run pods": "cd ios && pod install",
+    "pods": "cd ios && pod install",
     "simi": "npm run ios",
     "sima": "npm run android-device",
     "nuke-all": "npm run nuke:all",
