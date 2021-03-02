@@ -3,6 +3,7 @@ package com.scoot;
 import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
+import com.rnfs.RNFSPackage;
 import com.facebook.react.ReactApplication;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.facebook.react.ReactInstanceManager;
@@ -28,7 +29,8 @@ public class MainApplication extends Application implements ReactApplication {
         protected List<ReactPackage> getPackages() {
           return Arrays.<ReactPackage>asList(
               new MainReactPackage(),
-                new MapsPackage()
+              new RNFSPackage(),
+              new MapsPackage()
           );
         }
 
