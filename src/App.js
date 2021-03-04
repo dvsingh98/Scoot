@@ -7,12 +7,10 @@
  */
 
 import React, {Component} from 'react';
-
-import AppleMaps from './screens/MapView.js';
-
+import AppContainer from './navigation';
 class AppComponent extends Component {
   render() {
-    return <AppleMaps />;
+    return <AppContainer />;
   }
 }
 
