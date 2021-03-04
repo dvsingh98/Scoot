@@ -16,6 +16,13 @@
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* scootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* scootTests.m */; };
 		4AF62668B8458F510CFCC326 /* libPods-scoot-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B2A0B94A75F5B8D6800965 /* libPods-scoot-tvOSTests.a */; };
+		7B96563A25F091BB006B9E50 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96563925F091BB006B9E50 /* WidgetKit.framework */; };
+		7B96563C25F091BB006B9E50 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B96563B25F091BB006B9E50 /* SwiftUI.framework */; };
+		7B96563F25F091BB006B9E50 /* ScootWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B96563E25F091BB006B9E50 /* ScootWidget.swift */; };
+		7B96564225F091BD006B9E50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B96564125F091BD006B9E50 /* Assets.xcassets */; };
+		7B96564425F091BD006B9E50 /* ScootWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7B96564025F091BB006B9E50 /* ScootWidget.intentdefinition */; };
+		7B96564525F091BD006B9E50 /* ScootWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7B96564025F091BB006B9E50 /* ScootWidget.intentdefinition */; };
+		7B96564825F091BD006B9E50 /* ScootWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B96563825F091BB006B9E50 /* ScootWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		94B06562AD1DC56D58383549 /* libPods-scoot-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23518AE2B9C33569232F0C57 /* libPods-scoot-tvOS.a */; };
 		C3F460E0BD02F93C140824C6 /* libPods-scoot-scootTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D60613F38C659D6E6A121063 /* libPods-scoot-scootTests.a */; };
@@ -37,7 +44,28 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "scoot-tvOS";
 		};
+		7B96564625F091BD006B9E50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B96563725F091BB006B9E50;
+			remoteInfo = ScootWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B96564925F091BD006B9E50 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B96564825F091BD006B9E50 /* ScootWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -60,6 +88,13 @@
 		6556E8C3FC952FBEC716001E /* Pods-scoot-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scoot-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-scoot-tvOSTests/Pods-scoot-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		65F00235A37670B460CE5130 /* Pods-scoot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scoot.debug.xcconfig"; path = "Target Support Files/Pods-scoot/Pods-scoot.debug.xcconfig"; sourceTree = "<group>"; };
 		7B6CBC653E80C8D77C2F8817 /* Pods-scoot-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scoot-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-scoot-tvOSTests/Pods-scoot-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B96563825F091BB006B9E50 /* ScootWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScootWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B96563925F091BB006B9E50 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7B96563B25F091BB006B9E50 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7B96563E25F091BB006B9E50 /* ScootWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScootWidget.swift; sourceTree = "<group>"; };
+		7B96564025F091BB006B9E50 /* ScootWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = ScootWidget.intentdefinition; sourceTree = "<group>"; };
+		7B96564125F091BD006B9E50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B96564325F091BD006B9E50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = scoot/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60613F38C659D6E6A121063 /* libPods-scoot-scootTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scoot-scootTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB05FA13138B9A334A98359E /* libPods-scoot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scoot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +137,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B96563525F091BB006B9E50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B96563C25F091BB006B9E50 /* SwiftUI.framework in Frameworks */,
+				7B96563A25F091BB006B9E50 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -117,7 +161,6 @@
 				7B6CBC653E80C8D77C2F8817 /* Pods-scoot-tvOSTests.debug.xcconfig */,
 				6556E8C3FC952FBEC716001E /* Pods-scoot-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -161,8 +204,21 @@
 				D60613F38C659D6E6A121063 /* libPods-scoot-scootTests.a */,
 				23518AE2B9C33569232F0C57 /* libPods-scoot-tvOS.a */,
 				12B2A0B94A75F5B8D6800965 /* libPods-scoot-tvOSTests.a */,
+				7B96563925F091BB006B9E50 /* WidgetKit.framework */,
+				7B96563B25F091BB006B9E50 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B96563D25F091BB006B9E50 /* ScootWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7B96563E25F091BB006B9E50 /* ScootWidget.swift */,
+				7B96564025F091BB006B9E50 /* ScootWidget.intentdefinition */,
+				7B96564125F091BD006B9E50 /* Assets.xcassets */,
+				7B96564325F091BD006B9E50 /* Info.plist */,
+			);
+			path = ScootWidget;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -178,6 +234,7 @@
 				13B07FAE1A68108700A75B9A /* scoot */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* scootTests */,
+				7B96563D25F091BB006B9E50 /* ScootWidget */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0019947628BFB39E5D640AD9 /* Pods */,
@@ -194,6 +251,7 @@
 				00E356EE1AD99517003FC87E /* scootTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* scoot-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* scoot-tvOSTests.xctest */,
+				7B96563825F091BB006B9E50 /* ScootWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -232,10 +290,12 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				013FCAEAA70C876187C3E431 /* [CP] Copy Pods Resources */,
+				7B96564925F091BD006B9E50 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B96564725F091BD006B9E50 /* PBXTargetDependency */,
 			);
 			name = scoot;
 			productName = scoot;
@@ -281,12 +341,30 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* scoot-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7B96563725F091BB006B9E50 /* ScootWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B96564C25F091BD006B9E50 /* Build configuration list for PBXNativeTarget "ScootWidgetExtension" */;
+			buildPhases = (
+				7B96563425F091BB006B9E50 /* Sources */,
+				7B96563525F091BB006B9E50 /* Frameworks */,
+				7B96563625F091BB006B9E50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScootWidgetExtension;
+			productName = ScootWidgetExtension;
+			productReference = 7B96563825F091BB006B9E50 /* ScootWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1130;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -304,6 +382,10 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					7B96563725F091BB006B9E50 = {
+						CreatedOnToolsVersion = 12.2;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -324,6 +406,7 @@
 				00E356ED1AD99517003FC87E /* scootTests */,
 				2D02E47A1E0B4A5D006451C7 /* scoot-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* scoot-tvOSTests */,
+				7B96563725F091BB006B9E50 /* ScootWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -357,6 +440,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B96563625F091BB006B9E50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B96564225F091BD006B9E50 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -572,6 +663,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B96564525F091BD006B9E50 /* ScootWidget.intentdefinition in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
@@ -594,6 +686,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7B96563425F091BB006B9E50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B96563F25F091BB006B9E50 /* ScootWidget.swift in Sources */,
+				7B96564425F091BD006B9E50 /* ScootWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -606,6 +707,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* scoot-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		7B96564725F091BD006B9E50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B96563725F091BB006B9E50 /* ScootWidgetExtension */;
+			targetProxy = 7B96564625F091BD006B9E50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -657,6 +763,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65F00235A37670B460CE5130 /* Pods-scoot.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -680,6 +787,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC2BC63A125F58458C3640F7 /* Pods-scoot.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -807,6 +915,65 @@
 			};
 			name = Release;
 		};
+		7B96564A25F091BD006B9E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScootWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.scoot.ScootWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7B96564B25F091BD006B9E50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = ScootWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.scoot.ScootWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		83CBBA201A601CBA00E9B192 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -858,7 +1025,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -911,7 +1078,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
-					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)\"",
+					"\"$(TOOLCHAIN_DIR)/usr/lib/swift-5.2/$(PLATFORM_NAME)\"",
 					"\"$(inherited)\"",
 				);
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -955,6 +1122,15 @@
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
 				2D02E49A1E0B4A5E006451C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B96564C25F091BD006B9E50 /* Build configuration list for PBXNativeTarget "ScootWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B96564A25F091BD006B9E50 /* Debug */,
+				7B96564B25F091BD006B9E50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
