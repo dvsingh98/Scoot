@@ -1,6 +1,12 @@
 import React from 'react';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
-import {StyleSheet, View, Alert} from 'react-native';
+import {
+  Platform,
+  PermissionsAndroid,
+  StyleSheet,
+  View,
+  Alert,
+} from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
 
 export default class Home extends React.Component {
@@ -13,6 +19,7 @@ export default class Home extends React.Component {
     };
   }
   async componentDidMount() {
+    await this.requestPermissions();
     Geolocation.getCurrentPosition(
       (position) => {
         this.setState({
@@ -34,6 +41,13 @@ export default class Home extends React.Component {
         maximumAge: 0,
       },
     );
+  }
+  async requestPermissions() {
+    if (Platform.OS === 'android') {
+      await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
+      );
+    }
   }
   render() {
     return (
