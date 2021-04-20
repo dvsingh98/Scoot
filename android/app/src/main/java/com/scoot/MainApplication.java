@@ -6,6 +6,7 @@ import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+import com.agontuk.RNFusedLocation.RNFusedLocationPackage;
 import com.airbnb.android.react.maps.MapsPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
@@ -32,6 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
               new MainReactPackage(),
             new SafeAreaContextPackage(),
             new RNGestureHandlerPackage(),
+            new RNFusedLocationPackage(),
                 new MapsPackage()
           );
         }
