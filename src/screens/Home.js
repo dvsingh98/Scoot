@@ -8,17 +8,30 @@ import {
   Alert,
 } from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
+import Firebase from '../../config/Firebase';
 
 export default class Home extends React.Component {
+  state = {
+    latitude: 37.7749,
+    longitude: 122.4194,
+    coordinates: [],
+    user: '',
+  };
   constructor(props) {
     super(props);
-    this.state = {
-      latitude: 0,
-      longitude: 0,
-      coordinates: [],
-    };
   }
   async componentDidMount() {
+    Firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.setState({
+          user: user,
+        });
+      } else {
+        this.setState({
+          user: null,
+        });
+      }
+    });
     await this.requestPermissions();
     Geolocation.getCurrentPosition(
       (position) => {
@@ -43,6 +56,12 @@ export default class Home extends React.Component {
     );
   }
   async requestPermissions() {
+    if (Platform.OS === 'ios') {
+      const auth = await Geolocation.requestAuthorization('whenInUse');
+      if (auth !== 'granted') {
+        Alert.alert('Permission denied');
+      }
+    }
     if (Platform.OS === 'android') {
       await PermissionsAndroid.request(
         PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,

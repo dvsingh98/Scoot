@@ -5,10 +5,23 @@ import {
   View,
   TextInput,
   TouchableOpacity,
-  Alert,
 } from 'react-native';
-
+import Firebase from '../../config/Firebase';
 export default class Signup extends React.Component {
+  state = {
+    name: '',
+    email: '',
+    password: '',
+  };
+
+  handleSignUp = () => {
+    const {email, password} = this.state;
+    Firebase.auth()
+      .createUserWithEmailAndPassword(email, password)
+      .catch((error) => console.log(error));
+    this.props.navigation.navigate('Login');
+  };
+
   render() {
     return (
       <View style={styles.container}>
@@ -18,7 +31,7 @@ export default class Signup extends React.Component {
             style={styles.inputText}
             placeholder="Name"
             placeholderTextColor="#003f5c"
-            onChangeText={(text) => this.setState({email: text})}
+            onChangeText={(text) => this.setState({name: text})}
           />
         </View>
         <View style={styles.inputView}>
@@ -38,16 +51,12 @@ export default class Signup extends React.Component {
             onChangeText={(text) => this.setState({password: text})}
           />
         </View>
-        <TouchableOpacity
-          style={styles.loginBtn}
-          onPress={() =>
-            Alert.alert(
-              'Success',
-              'You made an account!',
-              this.props.navigation.navigate('Login'),
-            )
-          }>
+        <TouchableOpacity style={styles.loginBtn} onPress={this.handleSignUp}>
           <Text style={styles.loginText}>Signup</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate('Login')}>
+          <Text style={styles.loginText}>Back to Login</Text>
         </TouchableOpacity>
       </View>
     );
