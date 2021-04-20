@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "884471611995",
+    "project_id": "scoot-304323",
+    "storage_bucket": "scoot-304323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884471611995:android:da860c8f2b54857f44357e",
+        "android_client_info": {
+          "package_name": "com.scoot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884471611995-bpgfj4ca2qe2mo8ap71chlbsd5jdst88.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzya55CoerMfzRXQUPFEgWZf1EODBUSSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884471611995-bpgfj4ca2qe2mo8ap71chlbsd5jdst88.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "884471611995-orgl6s18ir8qmljht6kfvu7eligj144g.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.scoot"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
