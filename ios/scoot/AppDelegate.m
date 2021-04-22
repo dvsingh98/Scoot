@@ -23,11 +23,14 @@ static void InitializeFlipper(UIApplication *application) {
   [client start];
 }
 #endif
+@import Firebase;
+@import UIKit;
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [FIRApp configure];
   [GMSServices provideAPIKey:@"AIzaSyBULKHdqyoBMQSau6V_zCvB8qUioYaBii4"];
 #ifdef FB_SONARKIT_ENABLED
   InitializeFlipper(application);
