@@ -10,6 +10,7 @@ import React, { Component } from 'react';
 
 import AppleMaps from './screens/MapView.js';
 
+
 class AppComponent extends Component {
   render() {
     return <AppleMaps />;
@@ -32,17 +33,19 @@ export default AppComponent;
 
 const fs = require("react-native-fs");
 
-fs.readFile("src/scootData.json", "utf8", (err, jsonString) => {
+fs.readFile("\scootData.json", "utf8", (err, jsonString) => {
   console.log(process.cwd());
 
   if (err) {
     console.log("File read failed:", err);
     return;
   }
-  try {
-    const scootData = JSON.parse(jsonFile);
-    console.log(scootData);
-  } catch (err) {
-    console.log("Error parsing JSON string: ", err);
-  }
-});
+  console.log(data)
+})
+//   try {
+//     const scootData = JSON.parse(jsonFile);
+//     console.log(scootData);
+//   } catch (error) {
+//     console.log("Error parsing JSON string: ", err);
+//   }
+// });
