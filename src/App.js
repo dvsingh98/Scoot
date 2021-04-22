@@ -10,7 +10,6 @@ import React, { Component } from 'react';
 
 import AppleMaps from './screens/MapView.js';
 
-
 class AppComponent extends Component {
   render() {
     return <AppleMaps />;
@@ -19,33 +18,18 @@ class AppComponent extends Component {
 
 export default AppComponent;
 
-// 'use strict';
+import jsonData from './scootData.json';
 
-// const fs = require('react-native-fs');
+var scootArray = []
+for (var i = 0; i < jsonData.scooters.length; i++) {
+  var scooter = {
+    lat: parseFloat(jsonData.scooters[i].lat),
+    long: parseFloat(jsonData.scooters[i].long),
+    title: jsonData.scooters[i].ID,
+    description: jsonData.scooters[i].company
+  };
+  scootArray.push(scooter);
+}
 
-// fs.readFile('scoot/src/scootData.json', (err, data) => {
-//   if (err) throw err;
-//   let scootData= JSON.parse(data);
-//   console.log(scootData);
-// });
-
-// console.log('This is after the read call');
-
-const fs = require("react-native-fs");
-
-fs.readFile("\scootData.json", "utf8", (err, jsonString) => {
-  console.log(process.cwd());
-
-  if (err) {
-    console.log("File read failed:", err);
-    return;
-  }
-  console.log(data)
-})
-//   try {
-//     const scootData = JSON.parse(jsonFile);
-//     console.log(scootData);
-//   } catch (error) {
-//     console.log("Error parsing JSON string: ", err);
-//   }
-// });
+console.log(scootArray[0]);
+console.log(scootArray[1]);

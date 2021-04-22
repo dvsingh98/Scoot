@@ -1,6 +1,7 @@
-import React, {Component} from 'react';
-import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
-import {StyleSheet, View} from 'react-native';
+import React, { Component } from 'react';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import { StyleSheet, View } from 'react-native';
+
 export default class AppleMaps extends Component {
   render() {
     return (
