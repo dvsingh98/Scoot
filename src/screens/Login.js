@@ -3,6 +3,7 @@ import {
   StyleSheet,
   Text,
   View,
+  Image,
   TextInput,
   TouchableOpacity,
 } from 'react-native';
@@ -55,7 +56,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>scoot</Text>
+        <Image style={styles.image} source={require("./picture/logo.png")} />
         <View style={styles.inputView}>
           <TextInput
             style={styles.inputText}
@@ -101,11 +102,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  logo: {
-    fontWeight: 'bold',
-    fontSize: 50,
-    color: '#ffcb2e',
-    marginBottom: 40,
+  image :{
+	  marginTop: 30,
+	  marginBottom: 40,
+	  width: 300,
+	  height: 300,
   },
   inputView: {
     width: '80%',
