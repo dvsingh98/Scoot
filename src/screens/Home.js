@@ -1,5 +1,5 @@
 import React from 'react';
-import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 import {
   Platform,
   PermissionsAndroid,
@@ -10,21 +10,37 @@ import {
 import Geolocation from 'react-native-geolocation-service';
 import Firebase from '../../config/Firebase';
 
+import jsonData from '../../scootData.json';
+export const scootArray = Object.values(jsonData.scooters);
+
 export default class Home extends React.Component {
   state = {
     latitude: 37.7749,
     longitude: 122.4194,
     coordinates: [],
     user: '',
+    scooterList: scootArray
   };
-  constructor(props) {
-    super(props);
+
+
+  mapMarkers = () => {
+    return this.state.scooterList.map((scooter, index) => <Marker
+      key={index}
+      coordinate={{
+        latitude: parseFloat(scooter.lat),
+        longitude: parseFloat(scooter.long)
+      }}
+      title={scooter.company}
+      description={scooter.ID}
+    >
+      </Marker>)
   }
+
   async componentDidMount() {
     Firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         this.setState({
-          user: user,
+          user: user
         });
       } else {
         this.setState({
@@ -74,14 +90,15 @@ export default class Home extends React.Component {
         <MapView
           style={styles.map}
           provider={PROVIDER_GOOGLE}
+          showsUserLocation={true}
           region={{
             latitude: this.state.latitude,
             longitude: this.state.longitude,
             latitudeDelta: 0.005,
             longitudeDelta: 0.005,
-          }}
-          showsUserLocation={true}
-        />
+          }}>
+          {this.mapMarkers()}
+        </MapView>
       </View>
     );
   }
