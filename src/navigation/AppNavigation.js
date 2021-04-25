@@ -1,22 +1,13 @@
-import {createStackNavigator, HeaderBackButton} from 'react-navigation-stack';
+import {createStackNavigator} from 'react-navigation-stack';
 import Home from '../screens/Home';
-import React from 'react';
 
-export const navigationOptions = ({navigation}) => ({
-  headerLeft: () => (
-    <HeaderBackButton onPress={() => navigation.navigate('Login')} />
-  ),
-});
 const AppNavigation = createStackNavigator(
   {
-    Home: {
-      screen: Home,
-      navigationOptions,
-    },
+    Home: {screen: Home},
   },
   {
-    // initialRouteName: 'Home',
-    headerMode: 'float',
+    initialRouteName: 'Home',
+    headerMode: 'none',
   },
 );
 
