@@ -4,301 +4,351 @@
             "company": "VeoRide",
             "ID": "001",
             "lat": "36.063178",
-            "long": "-94.173412"
+            "long": "-94.173412",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "001",
             "lat": "36.063577",
-            "long": "-94.172318"
+            "long": "-94.172318",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "002",
             "lat": "36.068354",
-            "long": "-94.174445"
+            "long": "-94.174445",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "002",
             "lat": "36.068444",
-            "long": "-94.177555"
+            "long": "-94.177555",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "003",
             "lat": "36.065738",
-            "long": "-94.177211"
+            "long": "-94.177211",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "003",
             "lat": "36.069936",
-            "long": "-94.175152"
+            "long": "-94.175152",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "004",
             "lat": "36.069797",
-            "long": "-94.166743"
+            "long": "-94.166743",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "004",
             "lat": "36.067473",
-            "long": "-94.168631"
+            "long": "-94.168631",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "005",
             "lat": "36.065367",
-            "long": "-94.170932"
+            "long": "-94.170932",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "005",
             "lat": "36.064323",
-            "long": "-94.171009"
+            "long": "-94.171009",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "006",
             "lat": "36.063509",
-            "long": "-94.171081"
+            "long": "-94.171081",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "006",
             "lat": "36.063197",
-            "long": "-94.171135"
+            "long": "-94.171135",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "007",
             "lat": "36.185101",
-            "long": "-94.138519"
+            "long": "-94.138519",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "007",
             "lat": "36.067421",
-            "long": "-94.174216"
+            "long": "-94.174216",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "008",
             "lat": "36.067655",
-            "long": "-94.173583"
+            "long": "-94.173583",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "008",
             "lat": "34.104270",
-            "long": "-94.360600"
+            "long": "-94.360600",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "009",
             "lat": "36.069120",
-            "long": "-94.173379"
+            "long": "-94.173379",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "009",
             "lat": "36.069148",
-            "long": "-94.171738"
+            "long": "-94.171738",
+            "color": "#FF7800"
         },
         {
             "company": "VeoRide",
             "ID": "010",
             "lat": "36.071479",
-            "long": "-94.175752"
+            "long": "-94.175752",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "010",
             "lat": "36.071817",
-            "long": "-94.173381"
+            "long": "-94.173381",
+            "color": "#FF7800"
         },
         {
             "company": "Spin",
             "ID": "011",
             "lat": "36.053753",
-            "long": "-94.176818"
+            "long": "-94.176818",
+            "color": "#FF7800"
         },
         {
             "company": "Spin",
             "ID": "012",
             "lat": "36.054099",
-            "long": "-94.176661"
+            "long": "-94.176661",
+            "color": "#FF7800"
         },
         {
             "company": "Spin",
             "ID": "013",
             "lat": "36.054155",
-            "long": "-94.176499"
+            "long": "-94.176499",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "011",
             "lat": "36.054013",
-            "long": "-94.176821"
+            "long": "-94.176821",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "014",
             "lat": "36.056185",
-            "long": "-94.175266"
+            "long": "-94.175266",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "012",
             "lat": "36.062155",
-            "long": "-94.175483"
+            "long": "-94.175483",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "015",
             "lat": "36.062221",
-            "long": "-94.175343"
+            "long": "-94.175343",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "013",
             "lat": "36.062334",
-            "long": "-94.17517"
+            "long": "-94.17517",
+            "color": "#00B8AA"
         },
         {
             "company": "Veoride",
             "ID": "014",
             "lat": "36.064591",
-            "long": "-94.172261"
+            "long": "-94.172261",
+            "color": "#00B8AA"
         },
         {
             "company": "Veoride",
             "ID": "015",
             "lat": "36.064591",
-            "long": "-94.172261"
+            "long": "-94.172261",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "016",
             "lat": "36.065004",
-            "long": "-94.172686"
+            "long": "-94.172686",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "016",
             "lat": "36.065495",
-            "long": "-94.173026"
+            "long": "-94.173026",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "017",
             "lat": "36.065597",
-            "long": "-94.173173"
+            "long": "-94.173173",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "017",
             "lat": "36.065572",
-            "long": "-94.173151"
+            "long": "-94.173151",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "018",
             "lat": "36.065536",
-            "long": "-94.173763"
+            "long": "-94.173763",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "018",
             "lat": "36.0655",
-            "long": "-94.173761"
+            "long": "-94.173761",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "019",
             "lat": "36.065465",
-            "long": "-94.173762"
+            "long": "-94.173762",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "019",
             "lat": "36.065439",
-            "long": "-94.173765"
+            "long": "-94.173765",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "020",
             "lat": "36.065414",
-            "long": "-94.173768"
+            "long": "-94.173768",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "020",
             "lat": "36.066161",
-            "long": "-94.173269"
+            "long": "-94.173269",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "021",
             "lat": "36.066122",
-            "long": "-94.173269"
+            "long": "-94.173269",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "021",
             "lat": "36.066728",
-            "long": "-94.174671"
+            "long": "-94.174671",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "022",
             "lat": "36.066835",
-            "long": "-94.174599"
+            "long": "-94.174599",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "022",
             "lat": "36.067024",
-            "long": "-94.174605"
+            "long": "-94.174605",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "023",
             "lat": "36.066993",
-            "long": "-94.174617"
+            "long": "-94.174617",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "023",
             "lat": "36.066959",
-            "long": "-94.174623"
+            "long": "-94.174623",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "024",
             "lat": "36.066927",
-            "long": "-94.174619"
+            "long": "-94.174619",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "024",
             "lat": "36.066832",
-            "long": "-94.174671"
+            "long": "-94.174671",
+            "color": "#00B8AA"
         },
         {
             "company": "Spin",
             "ID": "025",
             "lat": "36.066729",
-            "long": "-94.174733"
+            "long": "-94.174733",
+            "color": "#FF7800"
         },
         {
             "company": "Veoride",
             "ID": "025",
             "lat": "36.066729",
-            "long": "-94.174527"
+            "long": "-94.174527",
+            "color": "#00B8AA"
         }
     ]
 }

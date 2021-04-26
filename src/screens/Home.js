@@ -32,6 +32,7 @@ export default class Home extends React.Component {
       }}
       title={scooter.company}
       description={scooter.ID}
+      pinColor={scooter.color}
     >
       </Marker>)
   }

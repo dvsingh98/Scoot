@@ -11,8 +11,8 @@ import {HelperText} from 'react-native-paper';
 
 export default class Login extends React.Component {
   state = {
-    email: '',
-    password: '',
+    email: 'john@email.com',
+    password: 'john1234',
     errorMessage: '',
     user: '',
   };
