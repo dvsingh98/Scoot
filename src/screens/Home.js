@@ -6,6 +6,7 @@ import {
   StyleSheet,
   View,
   Alert,
+  Linking,
 } from 'react-native';
 import Geolocation from 'react-native-geolocation-service';
 import Firebase from '../../config/Firebase';
@@ -33,6 +34,7 @@ export default class Home extends React.Component {
       title={scooter.company}
       description={scooter.ID}
       pinColor={scooter.color}
+      onPress={ () => { Linking.openURL(scooter.link)}}
     >
       </Marker>)
   }
